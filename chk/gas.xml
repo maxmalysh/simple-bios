@@ -1,0 +1,64 @@
+<NotepadPlus>
+    <UserLang name="GAS (AT&amp;T) ASM" ext="s" udlVersion="2.1">
+        <Settings>
+            <Global caseIgnored="no" allowFoldOfComments="no" foldCompact="no" forcePureLC="0" decimalSeparator="0" />
+            <Prefix Keywords1="no" Keywords2="no" Keywords3="no" Keywords4="no" Keywords5="yes" Keywords6="no" Keywords7="no" Keywords8="no" />
+        </Settings>
+        <KeywordLists>
+            <Keywords name="Comments">00# 01 02 03/* 04*/</Keywords>
+            <Keywords name="Numbers, prefix1"></Keywords>
+            <Keywords name="Numbers, prefix2">0x 0b</Keywords>
+            <Keywords name="Numbers, extras1">A B C D E F a b c d e f</Keywords>
+            <Keywords name="Numbers, extras2"></Keywords>
+            <Keywords name="Numbers, suffix1"></Keywords>
+            <Keywords name="Numbers, suffix2"></Keywords>
+            <Keywords name="Numbers, range"></Keywords>
+            <Keywords name="Operators1">+ - * / , : ( ) $ = &lt;&lt; &gt; ;</Keywords>
+            <Keywords name="Operators2"></Keywords>
+            <Keywords name="Folders in code1, open"></Keywords>
+            <Keywords name="Folders in code1, middle"></Keywords>
+            <Keywords name="Folders in code1, close"></Keywords>
+            <Keywords name="Folders in code2, open"></Keywords>
+            <Keywords name="Folders in code2, middle"></Keywords>
+            <Keywords name="Folders in code2, close"></Keywords>
+            <Keywords name="Folders in comment, open"></Keywords>
+            <Keywords name="Folders in comment, middle"></Keywords>
+            <Keywords name="Folders in comment, close"></Keywords>
+            <Keywords name="Keywords1">%eax %ebx %ecx %edx %ax %bx %cx %dx %ah %al %bh %bl %ch %cl %dh %dl %edi %esi %esp %ebp %di %si %sp %bp %sph %spl %bph %bpl %cs %ds %es %fs %gs %ss %ip %eip %rip %eflags %rax %rbx %rcx %rdx %rdi %rsi %rsp %rbp %cr %dr %tr %sp %mm %xmm&#x000D;&#x000A;&#x000D;&#x000A;%cr0 %cr1 %cr2 %cr3</Keywords>
+            <Keywords name="Keywords2">cli lss sti int call ret iret nop hlt lret cld&#x000D;&#x000A;ljmp&#x000D;&#x000A;aad aadb aadw aadl aadq&#x000D;&#x000A;aam aamb aamw aaml aamq&#x000D;&#x000A;aas&#x000D;&#x000A;adc adcb adcw adcl adcq&#x000D;&#x000A;add addb addw addl addq&#x000D;&#x000A;and andb andw andl andq&#x000D;&#x000A;cmp cmpb cmpw cmpl cmpq&#x000D;&#x000A;cmpsb cmpsd cmpsq cmpsw&#x000D;&#x000A;cwd daa das div mul&#x000D;&#x000A;idiv imul imulb imulw imull imulq iretq iretl&#x000D;&#x000A;in inb inl inw inq&#x000D;&#x000A;inc incb incw incl incq&#x000D;&#x000A;int intb intw intl intq&#x000D;&#x000A;jmp jmpb jmpw jmpl jmpq&#x000D;&#x000A;ja jae jb jbe jc jcxz je jg jge jl jle jmp jna jnae jnb jnbe jnc jne jng jnge jnl jnle jno jnp jns jnz jo jp jpe jpo js jz &#x000D;&#x000A;lds ldsb ldsw ldsl ldsq&#x000D;&#x000A;lea leab leaw leal leaq&#x000D;&#x000A;les lesb lesw lesl lesq&#x000D;&#x000A;lfs lfsb lfsw lfsl lfsq&#x000D;&#x000A;lgs lgsb lgsw lgsl lgsq&#x000D;&#x000A;loop loopb loopw loopl loopq&#x000A;&#x0009;&#x000D;&#x000A;lodsw&#x000D;&#x000A;loope loopeb loopew loopel loopeq&#x000A;&#x0009;loopne loopneb loopnew loopnel loopneq&#x000A; loopnz loopnzb loopnzw loopnzl loopnzq&#x000A; loopz loopzb loopzw loopzl loopzq&#x000D;&#x000A;mov movb movw movl movq&#x000D;&#x000A;movsd movsw movsl&#x000D;&#x000A;neg negb negw negl&#x000D;&#x000A;or orb orw orl orq&#x000D;&#x000A;outb outw outl&#x000D;&#x000A;pop&#x000D;&#x000A;popb popw popl popq&#x000D;&#x000A;popa popad popaw popf&#x000D;&#x000A;push pushb pushw pushl pushq&#x000D;&#x000A;pusha pushad pushaw pushf&#x000D;&#x000A;rcl rclb rclw rcll rclq&#x000D;&#x000A;rcr rcrb rcrw rcrl rcrq&#x000D;&#x000A;rol rolb rolw roll rolq&#x000D;&#x000A;ror rorb rorw rorl rorq&#x000D;&#x000A;sub subb subw subl subq&#x000D;&#x000A;shr shrb shrw shrl shrq&#x000D;&#x000A;stosb stosd stosl&#x000D;&#x000A;test testb testw testl testq&#x000D;&#x000A;xchg xlatb xlat&#x000D;&#x000A;xor xorb xorw xorl xorq&#x000D;&#x000A;dec decb decw decl decq&#x000D;&#x000A;&#x000D;&#x000A;aaa aad aam aas adc add and call cbw clc cld cli cmc cmp cmps cmpsb cmpsw cwd daa das dec div esc hlt idiv imul in inc int into iret ja jae jb jbe jc jcxz je jg jge jl jle jmp jna jnae jnb jnbe jnc jne jng jnge jnl jnle jno jnp jns jnz jo jp jpe jpo js jz lahf lds lea les lods lodsb lodsw loop loope loopew loopne loopnew loopnz loopnzw loopw loopz loopzw mov movs movsb movsw mul neg nop not or out pop popf push pushf rcl rcr ret retf retn rol ror sahf sal sar sbb scas scasb scasw shl shr stc std sti stos stosb stosw sub test wait xchg xlat xlatb xor bound enter ins insb insw leave outs outsb outsw popa pusha pushw arpl lar lsl sgdt sidt sldt smsw str verr verw clts lgdt lidt lldt lmsw ltr bsf bsr bt btc btr bts cdq cmpsd cwde insd iretd iretdf iretf jecxz lfs lgs lodsd loopd looped loopned loopnzd loopzd lss movsd movsx movzx outsd popad popfd pushad pushd pushfd scasd seta setae setb setbe setc sete setg setge setl setle setna setnae setnb setnbe setnc setne setng setnge setnl setnle setno setnp setns setnz seto setp setpe setpo sets setz shld shrd stosd bswap cmpxchg invd invlpg wbinvd xadd lock rep repe repne repnz repz cflush cpuid emms femms cmovo cmovno cmovb cmovc cmovnae cmovae cmovnb cmovnc cmove cmovz cmovne cmovnz cmovbe cmovna cmova cmovnbe cmovs cmovns cmovp cmovpe cmovnp cmovpo cmovl cmovnge cmovge cmovnl cmovle cmovng cmovg cmovnle cmpxchg486 cmpxchg8b loadall loadall286 ibts icebp int1 int3 int01 int03 iretw popaw popfw pushaw pushfw rdmsr rdpmc rdshr rdtsc rsdc rsldt rsm rsts salc smi smint smintold svdc svldt svts syscall sysenter sysexit sysret ud0 ud1 ud2 umov xbts wrmsr wrshr&#x000D;&#x000A;lcall</Keywords>
+            <Keywords name="Keywords3">f2xm1 fabs fadd faddp fbld fbstp fchs fclex fcom fcomp fcompp fdecstp fdisi fdiv fdivp fdivr fdivrp feni ffree fiadd ficom ficomp fidiv fidivr fild fimul fincstp finit fist fistp fisub fisubr fld fld1 fldcw fldenv fldenvw fldl2e fldl2t fldlg2 fldln2 fldpi fldz fmul fmulp fnclex fndisi fneni fninit fnop fnsave fnsavew fnstcw fnstenv fnstenvw fnstsw fpatan fprem fptan frndint frstor frstorw fsave fsavew fscale fsqrt fst fstcw fstenv fstenvw fstp fstsw fsub fsubp fsubr fsubrp ftst fwait fxam fxch fxtract fyl2x fyl2xp1 fsetpm fcos fldenvd fnsaved fnstenvd fprem1 frstord fsaved fsin fsincos fstenvd fucom fucomp fucompp fcomi fcomip ffreep fcmovb fcmove fcmovbe fcmovu fcmovnb fcmovne fcmovnbe fcmovnu</Keywords>
+            <Keywords name="Keywords4">.code16 .code32 .arch .ifnb&#x000D;&#x000A;.byte .hword .word .int .long .double .short .float&#x000D;&#x000A;.string .string8 .string16 .ascii .asciz .comm&#x000D;&#x000A;.altmacro .macro .noaltmacro .end .func .endfunc&#x000D;&#x000A;.att_syntax .intel_syntax .att_mnemonic .intel_mnemonic .lcomm&#x000D;&#x000A;&#x000D;&#x000A;&#x000D;&#x000A;.abort .ABORT .align .balignw .balignl&#x000D;&#x000A;.else .elseif .endef .endif .equ .equiv .eqv .err&#x000D;&#x000A;.error .exitm .extern .fail .file .fill .global .globl&#x000D;&#x000A;.gnu_attribute .hidden .ident .if .incbin .include .internal&#x000D;&#x000A;.irp .irpc .lcomm .lflags .line .linkonce .list .ln .loc .loc_mark_labels&#x000D;&#x000A;.local .mri .nolist .octa .org .p2alignw .p2alignl&#x000D;&#x000A;.popsection .previous .print .protected .psize .purgem .pushsection .quad&#x000D;&#x000A;.reloc .rept .endr .sbttl .scl .section .set .single .size .skip .sleb128&#x000D;&#x000A;.space .stabd .stabn .stabs .struct .subsection&#x000D;&#x000A;.symver .tag .text .title .type .uleb128 .val .version&#x000D;&#x000A;.vtable_entry .vtable_inherit .warning .weak .weakref&#x000D;&#x000A;.asciiz&#x000D;&#x000A;.endm</Keywords>
+            <Keywords name="Keywords5">\ addr16 addr32</Keywords>
+            <Keywords name="Keywords6"></Keywords>
+            <Keywords name="Keywords7">$</Keywords>
+            <Keywords name="Keywords8"></Keywords>
+            <Keywords name="Delimiters">00&quot; 01 02&quot; 03&apos; 04\ 05&apos; 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23</Keywords>
+        </KeywordLists>
+        <Styles>
+            <WordsStyle name="DEFAULT" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="COMMENTS" fgColor="B4B4B4" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="LINE COMMENTS" fgColor="C0C0C0" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="NUMBERS" fgColor="FF8000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS1" fgColor="8080FF" bgColor="FFFFCC" fontName="" fontStyle="1" nesting="0" />
+            <WordsStyle name="KEYWORDS2" fgColor="0000FF" bgColor="FFFFFF" fontName="" fontStyle="1" nesting="0" />
+            <WordsStyle name="KEYWORDS3" fgColor="000080" bgColor="FFE0FF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS4" fgColor="0080FF" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS5" fgColor="800000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS6" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS7" fgColor="0000FF" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS8" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="OPERATORS" fgColor="000080" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="FOLDER IN CODE1" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="FOLDER IN CODE2" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="FOLDER IN COMMENT" fgColor="800000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS1" fgColor="800000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS2" fgColor="808040" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS3" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS4" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS5" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS6" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS7" fgColor="FF0000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS8" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+        </Styles>
+    </UserLang>
+</NotepadPlus>

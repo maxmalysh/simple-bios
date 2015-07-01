@@ -1,0 +1,19 @@
+ENTRY(start)
+OUTPUT_ARCH(i386)
+SECTIONS
+{
+	. = 0x0000;
+	.text :
+	{
+		*(.ROM)
+		*(.eMBR)
+		. = 0x7C00;
+		*(.eBTLDR)
+		*(.libtext)
+		*(.data)
+		*(.bss)
+		*(.rodata)
+		. = 0x0FFF0;
+		*(.ejump)
+	}
+}
